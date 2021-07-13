@@ -24,8 +24,66 @@ main {
 hr {
   border: 1px solid #d1d1d1;
 }
-/* top players */
+/* -----------------
+    Navigation
+   -----------------  */
+header {
+  background: #562eff;
+  width: 100%;
+  height: 94px;
+  padding-top: 0px;
+}
+.navbar {
+  width: 930px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+.logo {
+  padding-left: 0px;
+  margin-top: 12px;
+}
+.logo ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  align-items: center;
+  margin: 0px;
+}
+.logo ul li {
+  font-size: 16px;
+  margin-right: 16px;
+}
+.logo ul li {
+  font-size: 24px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  margin-top: 12px;
+}
+.menu ul li {
+  margin-left: 36px;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.logo-icon img {
+  position: relative;
+  height: 50px;
+  margin-top: 12px;
+}
+.logo-name a {
+  text-decoration: none;
+  color: white;
+}
 
+/* -----------------
+    top players
+-------------------- */
 .top-player {
   margin-bottom: 20px;
 }

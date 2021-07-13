@@ -37,8 +37,8 @@ header {
   width: 930px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
   align-items: center;
+  margin: auto;
 }
 .logo {
   padding-left: 0px;
@@ -63,6 +63,7 @@ header {
   align-items: center;
   margin: 0px;
   margin-top: 12px;
+  padding-left: 0px;
 }
 .menu ul li {
   margin-left: 36px;
@@ -109,7 +110,9 @@ li {
   padding-left: 16px;
   font-size: 18px;
 }
-/* Top Blogs */
+/* ---------------
+      Top Blogs
+----------------- */
 .blogs {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,6 +128,9 @@ li {
 }
 .blog-title h3 {
   font-size: 20px;
+}
+.blog-txt h3 {
+  margin-top: 0px;
 }
 .blog-txt p {
   font-size: 16px;
@@ -183,4 +189,83 @@ li {
 .coures-duration {
   font-size: 15px;
   color: #ff4a60;
+}
+/* -----------------
+    Midia Quary
+------------------ */
+@media only screen and (max-width: 767px) {
+  header {
+    height: 85px;
+  }
+
+  /* ---------
+      navbar
+      ------- */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    padding-left: 0px;
+    margin-right: 5px;
+  }
+  .menu ul li {
+    margin-left: 10px;
+    color: white;
+  }
+  .logo {
+    margin-left: 5px;
+  }
+  .logo ul li {
+    margin-right: 0px;
+  }
+  .logo ul li a {
+    margin-left: 10px;
+  }
+  /* -----------------
+       Top Player
+       -------------- */
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+  }
+  .section-title {
+    color: #562eff;
+    font-size: 24px;
+    text-align: center;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    grid-row-gap: 20px;
+  }
+  .player {
+    margin-left: 50px;
+  }
+
+  /* ------------------
+  Top Blogs
+  --------------------- */
+  .blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    margin: 0px 10px;
+  }
+  /* ---------------
+  Latest courses
+  -----------------  */
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+  }
+  .course {
+    margin: auto;
+  }
 }
